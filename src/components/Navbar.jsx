@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/Navbar.css";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 function Navbar() {
   return (
     <div className="nav">
@@ -11,9 +13,10 @@ function Navbar() {
           </h1>
         </div>
         <div className="links">
-          <a href="">
+          <a className="product" href="">
             Products
             <svg
+            className="product-svg"
               width="24"
               height="21"
               viewBox="0 0 24 21"
@@ -23,9 +26,10 @@ function Navbar() {
               <path d="M12 13.125L7 8.75H17L12 13.125Z" fill="white" />
             </svg>
           </a>
-          <a href="">
+          <a className="tools" href="">
             Tools
             <svg
+            className="tools-svg"
               width="24"
               height="21"
               viewBox="0 0 24 21"
