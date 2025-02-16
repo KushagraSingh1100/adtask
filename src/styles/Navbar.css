@@ -1,0 +1,132 @@
+.nav {
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    z-index: 99;
+}
+
+
+.navbar {
+    margin-top: 5vh;
+    z-index: 99;
+    color: white;
+    width: 1176px;
+    height: 63px;
+    background-color: #5c606950;
+    backdrop-filter: blur(5px);
+    border-radius: 16px;
+    border: 1px solid #FFFFFF1A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 160px;
+}
+
+.heading,
+.links,
+.navbar-btn {
+    width: max-content;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar h1 {
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+}
+
+.navbar span {
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 800;
+
+}
+
+.links {
+    padding-left: 50px;
+    display: flex;
+    gap: 32px;
+}
+
+.navbar a {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.navbar svg {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-btn {
+    display: flex;
+    gap: 16px;
+}
+
+.login {
+    width: 113px;
+    height: 42px;
+    border-radius: 24px;
+    border: 1px solid #7687B5;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 1.2vw;
+}
+
+.call {
+    font-size: 1.2vw;
+    width: 161px;
+    height: 42px;
+    border-radius: 24px;
+    border: 1px solid #7687B5;
+    background-color: rgba(118, 135, 181, 0.29);
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        width: 760px;
+        height: 63px;
+        padding: 0 2vw;
+        gap: 4vw;
+        justify-content: space-between;
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+
+    .links {
+        gap: 1vw;
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .links a {
+        width: max-content;
+    }
+
+    .navbar-btn{
+        display: flex;
+        align-items: center;
+    }
+
+    .call {
+        background: url('../assets/phone.png') no-repeat center center;
+        background-size: 2vw;
+        width: 42px;
+        height: 42px;
+        text-indent: -9999px;
+        border: none;
+        border: 1px solid rgba(118, 135, 181, 1);
+        cursor: pointer;
+        background-color: rgba(118, 135, 181, 0.29);
+    }
+}

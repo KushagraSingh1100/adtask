@@ -1,0 +1,292 @@
+.home-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 10vh;
+    z-index: 999;
+}
+
+.blur {
+    position: absolute;
+    z-index: 9;
+    filter: blur(47px);
+    top: 0;
+    background-color: transparent;
+}
+
+.shine {
+    position: absolute;
+    left: -11%;
+    top: 0%;
+    transform: rotate(15deg);
+    filter: blur(5px);
+    box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1);
+    animation-name: shine-ani;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+}
+
+@keyframes shine-ani {
+    0% {
+        left: -11%;
+    }
+
+    100% {
+        left: 82%;
+    }
+}
+
+.transform-rect {
+    z-index: 99;
+    width: 371px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0 5px;
+    background: linear-gradient(to top,
+            rgba(25, 25, 25, 0.45) 0%,
+            rgba(50, 50, 50, 0.3) 50%,
+            rgba(80, 80, 80, 0.15) 100%);
+
+    backdrop-filter: blur(10px);
+    margin-bottom: 8vh;
+}
+
+.transform-rect svg {
+    z-index: 99;
+    width: 6vw;
+    height: 6vw;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.transform-rect p {
+    z-index: 99;
+    font-size: 15px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+.adTask-text {
+    z-index: 99;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    height: max-content;
+    margin-bottom: 6vh;
+    background-color: transparent;
+}
+
+.adTask-text svg {
+    z-index: 99;
+    position: absolute;
+    top: 1.5vw;
+    right: 3.5vw;
+    animation-name: blink-ani;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink-ani {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.adTask-text p {
+    background-color: transparent;
+    z-index: 99;
+    text-align: center;
+}
+
+.adTask span {
+    font-weight: 800;
+    background-color: transparent;
+}
+
+.adTask .heading {
+    font-family: "Poppins", serif;
+}
+
+@keyframes hover-ani {
+    0% {
+        background-position: 50% 0;
+    }
+
+    100% {
+        background-position: 0% 0;
+    }
+}
+
+.adTask .heading h1 {
+    z-index: 99;
+    font-weight: 300;
+    font-size: 9vw;
+    margin-bottom: 5vh;
+    background: linear-gradient(to left, rgba(226, 232, 248, 1), rgb(132, 132, 145) 50%, rgba(226, 232, 248, 1));
+    background-size: 200% 100%;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: all 0.7s ease-in-out;
+}
+
+.adTask .heading h1:hover {
+    text-shadow: 0px 0px 10px rgba(118, 135, 181, 0.5);
+    animation: hover-ani 2s infinite alternate;
+}
+
+
+.try-btn {
+    z-index: 99;
+    width: 185px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 3px solid transparent;
+    margin-bottom: 2vh;
+}
+
+.try-btn svg {
+    background-color: transparent;
+}
+
+
+.try-btn button {
+    z-index: 99;
+    width: 185px;
+    height: 48px;
+    background-color: rgba(118, 135, 181, 0.29);
+    border-radius: 40px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    margin-bottom: 2vh;
+}
+
+.try-btn button::before {
+    z-index: 99;
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: 40px;
+    background: linear-gradient(45deg, rgba(118, 135, 181, 1), rgba(51, 59, 79, 1));
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.small-txt {
+    z-index: 99;
+    background-color: transparent;
+}
+
+.small-txt p {
+    background-color: transparent;
+    z-index: 99;
+    font-size: 0.9vw;
+}
+
+.yt {
+    z-index: 99;
+    margin-top: 5vh;
+    height: 582px;
+    width: 970px;
+    --border-size: 3px;
+    --border-angle: 0turn;
+    margin-bottom: 100px;
+    background-image: conic-gradient(from var(--border-angle), rgb(0, 0, 0), rgb(0, 0, 0) 50%, rgb(0, 0, 0)), conic-gradient(from var(--border-angle), transparent 0%, rgba(118, 135, 181, 1), rgba(51, 59, 79, 1));
+    background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+    background-position: center center;
+    background-color: black;
+    background-repeat: no-repeat;
+    -webkit-animation: bg-spin 3s linear infinite;
+    animation: bg-spin 3s linear infinite;
+}
+
+@-webkit-keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+.yt-text,
+.adTask {
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.adTask svg {
+    background-color: transparent;
+}
+
+.yt-logo {
+    z-index: 99;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 1024px) {
+    .home-page {
+        margin-top: 3vh;
+    }
+
+    .transform-rect {
+        margin-bottom: 3vh;
+    }
+
+    .blur {
+        top: 6%;
+    }
+
+    .adTask .heading h1 {
+        margin: 2vh;
+    }
+
+    .adTask-text {
+        margin-bottom: 2vh;
+    }
+
+    .small-txt p {
+        font-size: 1.2vw;
+    }
+
+    .yt {
+        width: 80vw;
+    }
+}

@@ -1,0 +1,333 @@
+.contact-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    width: 1, 031px;
+    height: 314px;
+    gap: 24px;
+    margin-top: 5vh;
+}
+
+.left-heading {
+    background-color: transparent;
+    text-align: start;
+}
+
+.left-heading h1 {
+    font-size: 36px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.left-heading h2 {
+    transform: translateY(-2vh);
+    color: rgba(118, 135, 181, 0);
+    font-weight: 500;
+    font-size: 36px;
+    background: linear-gradient(to right, rgba(118, 135, 181, 1), rgba(145, 176, 255, 1), rgba(226, 232, 248, 1));
+    background-clip: text;
+    background-color: transparent;
+}
+
+.left-txt {
+    margin-top: 1vh;
+    width: 445px;
+    margin-bottom: 4vh;
+    background-color: transparent;
+}
+
+.left-txt p {
+    background-color: transparent;
+
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2vh;
+    background-color: transparent;
+}
+
+.email,
+.location,
+.phone {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+
+}
+
+.contact-links h3 {
+    font-weight: 100;
+    background-color: transparent;
+}
+
+.right {
+    width: 484px;
+    height: 314px;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.field input {
+    height: 36px;
+    width: 484px;
+    border: 1px solid rgba(51, 59, 79, 1);
+    border-radius: 4px;
+}
+
+.msg-field input {
+    height: 107px;
+    width: 484px;
+    border: 1px solid rgba(51, 59, 79, 1);
+    border-radius: 4px;
+}
+
+.submit-btn button {
+    z-index: 99;
+    width: 185px;
+    height: 48px;
+    background-color: rgba(118, 135, 181, 0.29);
+    border-radius: 40px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    position: absolute;
+    margin-bottom: 2vh;
+    left: 913px;
+    margin-top: 3vh;
+}
+
+.submit-btn button::before {
+    z-index: 99;
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: 40px;
+    background: linear-gradient(45deg, rgba(118, 135, 181, 1), rgba(51, 59, 79, 1));
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.contact-page .adTask {
+    position: relative;
+    margin-top: 25vh;
+    z-index: 99;
+}
+
+.center-heading .container {
+    background-color: transparent;
+    top: -100%;
+    left: -100%;
+    height: 70vh;
+    width: 60vw;
+
+}
+
+.center-heading .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 10% 100%, rgba(5, 5, 6, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: -1;
+}
+
+
+.center-heading {
+    position: relative;
+    text-align: center;
+    margin-top: 15vh;
+    z-index: 99;
+    background-color: transparent;
+}
+
+.center-heading h1 {
+    font-size: 36px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.center-heading h2 {
+    transform: translateY(-2vh);
+    color: rgba(118, 135, 181, 0);
+    font-weight: 500;
+    font-size: 36px;
+    background: linear-gradient(to right, rgba(118, 135, 181, 1), rgba(145, 176, 255, 1), rgba(226, 232, 248, 1));
+    background-clip: text;
+}
+
+.contact-btns {
+    margin-top: 10vh;
+    z-index: 99;
+    margin-bottom: 20vh;
+    background-color: transparent;
+}
+
+.schedule-btn {
+    background-color: transparent;
+    z-index: 99;
+}
+
+.contact-btns .try-btn {
+    background-color: transparent;
+}
+
+.schedule-btn button {
+    width: 185px;
+    height: 48px;
+    border-radius: 40px;
+    border: 1px solid rgba(118, 135, 181, 1);
+    background-color: transparent;
+    z-index: 99;
+}
+
+.left {
+    position: relative;
+    z-index: 999;
+}
+
+.left .blur {
+    top: 0vw;
+    left: 5vw;
+    width: 10vw;
+    height: 10vh;
+    z-index: -1;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 361px;
+    border-top: 1px solid rgba(51, 59, 79, 1);
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-left {
+    position: absolute;
+    left: 222px;
+    top: 86px;
+}
+
+.footer-left .contact-links h3 {
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.footer .heading {
+    font-size: 3.5vw;
+}
+
+.footer .heading h1,
+.footer .heading span {
+    color: rgba(197, 205, 227, 1);
+}
+
+.footer-right {
+    display: flex;
+    gap: 20vw;
+    position: absolute;
+    top: 66px;
+    left: 789px;
+}
+
+.footer-right h1 {
+    font-weight: 500;
+    font-size: 1.8vw;
+}
+
+.footer-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.li1,
+.li2,
+.li3,
+.li4 {
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.rights {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 323px;
+    margin-top: 3vh;
+
+}
+
+.rights p {
+    color: rgba(120, 129, 153, 1);
+}
+
+.contact-page .blur {
+    top: 2vw;
+}
+
+@media screen and (max-width: 1024px){
+    .contact-form{
+        margin-bottom: 12vh;
+        flex-direction: column;
+    }
+    .submit-btn button{
+        left: 40%;
+        top: 405%;
+    }
+    .center-heading{
+        margin: 10vh;
+        margin-bottom: 0;
+    }
+    .left-heading h2{
+        margin-top: 1vh;
+    }
+    .center-heading h1{
+        margin-bottom: 1vh;
+    }
+    .contact-btns{
+        margin: 0;
+        margin-bottom: 5vh;
+    }
+    .footer{
+        height: 30vh;
+    }
+    .footer-left{
+        width: max-content;
+        height: max-content;
+        font-size: 2vw;
+        transform: translateX(-15vw);
+    }
+    .footer-left .heading h1{
+        font-size: 10vw;
+    }
+    .footer-right{
+        width: max-content;
+        font-size: 2vw;
+        transform: translate(-23vw,4vw);
+    }
+    .footer-right h1{
+        font-size: 3vw;
+    }
+    .rights{
+        margin-top: 4vh;
+    }
+}
