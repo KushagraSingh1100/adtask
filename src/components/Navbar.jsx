@@ -1,7 +1,5 @@
 import React from "react";
 import "../styles/Navbar.css";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 function Navbar() {
   return (
     <div className="nav">
