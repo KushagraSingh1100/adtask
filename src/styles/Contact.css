@@ -433,7 +433,7 @@
     .footer-right {
         position: relative;
         margin: 0;
-        transform: translate(-230vw, -4vh);
+        transform: translate(-210vw, -4vh);
     }
 
     .footer-left .heading {
