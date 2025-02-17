@@ -417,8 +417,7 @@
     }
 
     .footer-left {
-        position: relative;
-        transform: translate(-65vw, -5vh);
+        transform: translate(-65vw, 12vh);
     }
 
     .footer-right h1 {
@@ -431,9 +430,9 @@
     }
 
     .footer-right {
-        position: relative;
+        top:30px;
+        left:160px;
         margin: 0;
-        transform: translate(-210vw, -4vh);
     }
 
     .footer-left .heading {
