@@ -418,6 +418,7 @@
 
     .footer-left {
         transform: translate(-65vw, 12vh);
+        left: 65%;
     }
 
     .footer-right h1 {
@@ -430,8 +431,8 @@
     }
 
     .footer-right {
-        top:18px;
-        left:160px;
+        top: 5%;
+        left: 48%;
         margin: 0;
     }
 
@@ -460,7 +461,7 @@
     .rights p {
         width: max-content;
     }
-    
+
     .rights {
         display: flex;
         flex-direction: row;
