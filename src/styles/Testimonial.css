@@ -124,12 +124,38 @@
     .testimonial-page{
         margin-bottom: 10vh;
     }
-
+    
     .testimonials-cards{
         width: 90vw;
         gap: 1vw;
     }
     .testi-card{
         width: 25vw;
+    }
+}
+@media screen and (max-width: 480px){
+    .testimonial-page{
+        overflow: hidden;
+    }
+    .testimonial-page .tag{
+        margin-bottom: 3vh;
+    }
+    .testimonial-heading-txt{
+        height: max-content;
+    }
+    .features-page-p p{
+        margin-top: 6vh;
+    }
+    .testimonials-cards{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        align-items: center;
+        gap: 2vh;
+    }
+    .testi-card{
+        width: 309.68096923828125px;
     }
 }

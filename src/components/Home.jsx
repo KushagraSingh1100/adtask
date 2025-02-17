@@ -93,7 +93,7 @@ function Home() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect x="0.6875" width="0.5625" height="27.1875" fill="#D9D9D9" />
+          <rect x="0.6875" width="0.5625" height="27.1875" fill="#ffff" />
         </svg>
       </div>
       <div className="try-btn">

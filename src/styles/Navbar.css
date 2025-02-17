@@ -69,6 +69,7 @@
     transition: all 0.5s;
     transform: rotate(180deg);
 }
+
 .tools:hover .tools-svg {
     transition: all 0.5s;
     transform: rotate(180deg);
@@ -92,6 +93,10 @@
     border: 1px solid #7687B5;
     background-color: rgba(118, 135, 181, 0.29);
     color: white;
+}
+
+.hamburger {
+    visibility: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -137,5 +142,35 @@
         border: 1px solid rgba(118, 135, 181, 1);
         cursor: pointer;
         background-color: rgba(118, 135, 181, 0.29);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        background-color: rgba(54, 54, 54, 0.28);
+        width: 100%;
+        height: 8vh;
+        margin-top: 0;
+        border-radius: 0;
+        overflow: hidden;
+    }
+
+    .navbar .heading {
+        margin: 2vw;
+    }
+
+    .links {
+        visibility: hidden;
+    }
+
+    .navbar-btn button {
+        visibility: hidden;
+    }
+
+    .hamburger {
+        position: absolute;
+        visibility: visible;
+        font-size: 4vw;
+        right: 5vw;
     }
 }

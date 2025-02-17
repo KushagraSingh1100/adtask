@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Navbar.css";
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="nav">
       <div className="container"> </div>
@@ -14,7 +15,7 @@ function Navbar() {
           <a className="product" href="">
             Products
             <svg
-            className="product-svg"
+              className="product-svg"
               width="24"
               height="21"
               viewBox="0 0 24 21"
@@ -27,7 +28,7 @@ function Navbar() {
           <a className="tools" href="">
             Tools
             <svg
-            className="tools-svg"
+              className="tools-svg"
               width="24"
               height="21"
               viewBox="0 0 24 21"
@@ -40,6 +41,9 @@ function Navbar() {
           <a href="">Contact Us</a>
         </div>
         <div className="navbar-btn">
+          <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+            ☰
+          </div>
           <button className="login">Log in</button>
           <button className="call">Schedule a Call</button>
         </div>

@@ -46,16 +46,21 @@
 }
 
 .icons p {
-    opacity: 0; 
+    opacity: 0;
     transition: all 0.3s;
 }
 
-.icons svg:hover {    
+.icons svg:hover {
     transform: translateY(-3vh);
     filter: drop-shadow(0px 0px 10px rgba(118, 135, 181, 0.5));
 }
 
-.icon1, .icon2, .icon3, .icon4, .icon5, .icon6{
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5,
+.icon6 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,35 +69,85 @@
     gap: 0;
 }
 
-.icon1:hover p{
+.icon1:hover p {
     opacity: 1;
 }
-.icon2:hover p{
+
+.icon2:hover p {
     opacity: 1;
 }
-.icon3:hover p{
+
+.icon3:hover p {
     opacity: 1;
 }
-.icon4:hover p{
+
+.icon4:hover p {
     opacity: 1;
 }
-.icon5:hover p{
+
+.icon5:hover p {
     opacity: 1;
 }
-.icon6:hover p{
+
+.icon6:hover p {
     opacity: 1;
 }
 
 @media screen and (max-width: 1024px) {
-    .moving-strip img{width: 2500px;}
-    .moving-strip{
+    .moving-strip img {
+        width: 2500px;
+    }
+
+    .moving-strip {
         margin-bottom: 0;
     }
-    .works-page{
+
+    .works-page {
         margin-bottom: 10vh;
     }
-    .works-page .container{
+
+    .works-page .container {
         height: 40vh;
     }
     
+}
+
+@media screen and (max-width: 480px) {
+    .moving-strip img {
+        position: absolute;
+        width: 400vw;
+        left: 10vw;
+    }
+    
+    .works-page {
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .icons {
+        width: 80vw;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-bottom: 5vh;
+    }
+
+    .icon1 svg,
+    .icon2 svg,
+    .icon3 svg,
+    .icon4 svg,
+    .icon5 svg,
+    .icon6 svg {
+        width: 25vw;
+    }
+
+    .icon1 p,
+    .icon2 p,
+    .icon3 p,
+    .icon4 p,
+    .icon5 p,
+    .icon6 p {
+        opacity: 1;
+        z-index: 999;
+    }
 }

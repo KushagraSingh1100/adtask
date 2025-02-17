@@ -290,3 +290,55 @@
         width: 80vw;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .home-page {
+        overflow: hidden;
+    }
+
+    .home-page .blur svg{
+        width: 100vw;
+    }
+
+    .transform-rect {
+        width: 80vw;
+
+        & p {
+            font-size: 3.3vw;
+        }
+    }
+
+    .adTask .heading h1 {
+        font-size: 20vw;
+    }
+
+    .adTask-text p {
+        font-family: 'Poppins', serif;
+        width: 85vw;
+        font-size: 3.5vw;
+        font-weight: 300;
+    }
+
+    .adTask-text {
+        margin-bottom: 5vh;
+    }
+
+    .adTask-text svg {
+        top: 7.2vh;
+        left: 64vw;
+    }
+
+    .small-txt p {
+        font-size: 3vw;
+    }
+
+    .yt {
+        border-radius: 2vw;
+        width: 311px;
+        height: 200px;
+    }
+
+    .yt .adTask svg {
+        width: 60vw;
+    }
+}

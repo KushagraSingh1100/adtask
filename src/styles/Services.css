@@ -104,3 +104,21 @@
         margin: 0;
     }
 }
+@media screen and (max-width: 480px){
+    .services-page{
+        margin: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    .services-page .tag{
+        margin-bottom: 3vh;
+    }
+    .services-heading{
+        margin-top: 0;
+    }
+    .services img{
+        width: 115vw;
+        height: 40vh;
+    }
+    
+}

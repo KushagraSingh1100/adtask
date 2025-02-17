@@ -313,3 +313,139 @@
         height: auto;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .features-page{
+        overflow: hidden;
+    }
+
+    .features-page .blur{
+        top: 0%;
+    }
+    .tag {
+        width: 25vw;
+        font-size: 3vw;
+        font-family: 'Poppins', serif;
+        font-weight: 300;
+        margin-bottom: 15vh;
+    }
+
+    .features-heading-txt {
+        height: max-content;
+        display: flex;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .features-heading {
+        margin: 0;
+    }
+
+    .features-heading hr {
+        width: 10vw;
+    }
+
+    .features-heading-txt h1 {
+        width: 85vw;
+        text-align: center;
+        margin: 0;
+        font-size: 8vw;
+    }
+
+    .features-heading-txt h2 {
+        font-size: 7.5vw;
+        width: 80vw;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20vh;
+    }
+
+    .features-page-p {
+        transform: translateY(-5vh);
+        margin-top: 0;
+    }
+
+    .features-page-p p {
+        width: 75vw;
+        text-align: center;
+    }
+
+    .first {
+        top: 12vh;
+        right: 90vw;
+        position: absolute;
+    }
+
+    .second {
+        position: absolute;
+        top: 12vh;
+        left: 90vw;
+    }
+
+    .features-cards {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+    }
+
+    .first-card,
+    .third-card {
+        overflow: hidden;
+        width: 311.51531982421875px;
+        height: 500px;
+        border: 1px solid rgba(118, 135, 181, 1);
+    }
+
+    .first-card h1
+    {
+        font-size: 5vw;
+        transform: translateY(-2vh);
+    }
+    .third-card h1
+     {
+        font-size: 5vw;
+        transform: translateY(-3vh);
+    }
+
+    .first-card p
+    {
+        font-size: 3vw;
+        transform: translateY(-2vh);
+    }
+    .third-card p{
+        font-size: 3vw;
+        transform: translateY(-3.5vh);
+    }
+    .outer-circle{
+        right: -1.5vw;
+        width: 75vw;
+    }
+    .top,
+    .bottom {
+        width: 309.41314697265625px;
+        height: 247.53px;
+        border: 1px solid rgba(118, 135, 181, 1);
+    }
+    .top h1,
+    .bottom h1{
+        font-size: 5vw;
+        transform: translateY(0vh);
+        font-weight: 400;
+    }
+    .second-card{
+        gap: 3vh;
+    }
+    .top p,
+    .bottom p{
+        font-size: 3vw;
+        font-weight: 300;
+        transform: translateY(-1vh);
+    }
+    .top .line{
+        width: 23.5vw;
+        margin-left: 3.5vw;
+    }
+}
