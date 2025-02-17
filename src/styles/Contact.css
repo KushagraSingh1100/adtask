@@ -380,17 +380,17 @@
     }
 
     .submit-btn {
-        margin-bottom: 10vh;
+        margin-bottom: 15vh;
         width: max-content;
         height: max-content;
     }
 
     .submit-btn button {
-        top: 50%;
-        left: 30%;
+        top: 48%;
+        left: 24%;
     }
 
-    .contact-page .tag{
+    .contact-page .tag {
         margin-bottom: 0;
     }
 
@@ -409,7 +409,7 @@
 
     .footer {
         width: 100%;
-        height: 42vh;
+        height: 45vh;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -418,7 +418,7 @@
 
     .footer-left {
         position: relative;
-        transform: translate(-53vw, -5vh);
+        transform: translate(-65vw, -5vh);
     }
 
     .footer-right h1 {
@@ -429,20 +429,20 @@
         gap: 0.5vh;
         font-size: 4vw;
     }
-    
+
     .footer-right {
         position: relative;
         margin: 0;
-        transform: translate(-190vw, -3vh);
+        transform: translate(-230vw, -4vh);
     }
-    
-    .footer-left .heading{
-    width: 100vw;
-    display: flex;
-    height: max-content;
-    justify-content: center;
-    align-items: center;
-}
+
+    .footer-left .heading {
+        width: 100vw;
+        display: flex;
+        height: max-content;
+        justify-content: center;
+        align-items: center;
+    }
 
     .footer-left .heading h1 {
         font-size: 15vw;
@@ -451,7 +451,7 @@
     .footer-left .contact-links {
         margin-top: 1vh;
         align-items: center;
-   }
+    }
 
     .footer-left .contact-links h3 {
         font-size: 3vw;
@@ -461,15 +461,13 @@
     .rights p {
         width: max-content;
     }
-
+    
     .rights {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin-bottom: 3vh;
         height: max-content;
         width: 100vw;
-        margin-bottom: 5vh;
     }
 }
